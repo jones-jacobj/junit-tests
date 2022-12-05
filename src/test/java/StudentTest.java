@@ -8,7 +8,7 @@ public class StudentTest {
 
     @Before
     public void init() {
-        this.s1 = new Student("Dave");
+        this.s1 = new Student("Dave",1);
     }
 
     @Test
@@ -19,6 +19,11 @@ public class StudentTest {
     @Test
     public void hasName(){
         assertNotNull(s1.getName());
+    }
+
+    @Test
+    public void hasID(){
+        assertNotNull(s1.getId());
     }
 
 }
